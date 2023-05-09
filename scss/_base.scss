@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$colores: (
+    formulario: #F4AB3E,
+    letras: #FFFFFF,
+    body: #3C4139,
+    navbar: #272A25,
+    
+);
+
+$font-weights: (
+regular: 400,
+medio: 500,
+bold: 700,
+);
+
+$tipografia:  'Poppins', sans-serif;
+
+body{
+    background-color: map-get($colores, body );
+}
+

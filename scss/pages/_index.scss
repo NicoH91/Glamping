@@ -1,0 +1,216 @@
+.header {
+    margin-left: 5em;
+    margin-right: 20em;
+}
+
+
+
+.navbar__logo {
+    font-size: 24px;
+    font-weight: map-get($font-weights, bold);
+    color: map-get($colores, letras);
+}
+
+.nav-item {
+    font-family: $tipografia;
+    margin-right: 2em;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: map-get($colores , navbar);
+    font-weight: map-get($font-weights , bold);
+}
+
+
+.hero-section {
+    background-image: url(/img/home.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    opacity: 1;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    font-weight: map-get($font-weights, medio);
+    background-color: map-get($colores, formulario);
+    border-top-left-radius: 20px;
+    padding: 50px;
+    z-index: 999;
+}
+
+.search-form .form-group {
+    font-family: $tipografia;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+
+input {
+    background-color: map-get($colores, formulario);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.search-form .form-group label {
+    margin-right: 5px;
+    font-family: $tipografia;
+    color: map-get($colores, letras);
+    font-weight: map-get($font-weights, bold);
+}
+
+.search-form .search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: map-get($colores, formulario);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.search-form .search-btn i {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+
+
+
+    .nav-link {
+        font-size: 1.2rem;
+        color: map-get($colores , letras);
+        font-weight: map-get($font-weights , bold);
+    }
+
+
+    .hero-section {
+        height: 500px;
+
+    }
+
+    .search-form {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        font-size: 1em;
+        flex-wrap: wrap;
+        // translate:  5px -400px 50px;//
+        padding: 5px;
+        border-radius: 5%;
+
+
+    }
+
+    .navbar__links li a {
+        color: white;
+    }
+}
+
+
+// Main section //
+.hero__section--main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/main.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    opacity: 1;
+
+}
+
+.main__section {
+
+    padding: 20px;
+
+
+}
+
+.main__section--titulo {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 60px;
+    letter-spacing: 5px;
+    color: map-get($colores, letras);
+    font-weight: map-get($font-weights , medio);
+}
+
+.main__section--titulo1 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 20px;
+    letter-spacing: 5px;
+    color: map-get($colores, letras);
+    font-weight: map-get($font-weights , medio);
+}
+
+.main__section--p {
+    text-align: center;
+    margin-top: 3px;
+    padding: 1px;
+    color: map-get($colores, letras);
+    font-weight: map-get($font-weights , bold);
+
+}
+
+.iconos {
+    //width:80%;
+    //margin-right 70%;
+    color: map-get($colores, letras);
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.svg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.aboutus {
+    color: map-get($colores, letras);
+    padding-top: 0.8rem;
+    text-align: center;
+    margin: 1em;
+    display: flex;
+}
+
+.main__section--titulo2 {
+    color: map-get($colores, letras);
+    text-align: center;
+    margin: 1rem;
+}
+
+
+.text {
+    color: map-get($colores, letras);
+    padding: 10px;
+    width: 60%;
+    margin: 0 auto;
+    font-family: $tipografia;
+    font-weight: map-get($font-weights, bold);
+    font-size: 1rem;
+}
+
+
+// // Main section  FINALIZO
+
+//Comienza la section OUR GLAMPING
+
+.section__glamping {
+    margin-top: 3px;
+}
