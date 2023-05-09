@@ -118,26 +118,78 @@ input {
     }
 }
 
+//Finaliza Landing PAGE!!!
 
 // Main section //
+
+
+@media (min-width:320px) and (max-width:768px) {
+    .hero__section--main {
+        height: 100%;
+
+
+
+    }
+
+    .main__section {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr;
+
+    }
+
+    .iconos {
+        display: grid;
+        grid-row-end: auto;
+        grid-template-rows: 1fr;
+
+    }
+
+    .svg__p {
+        display: none;
+    }
+
+    .main__section--titulo2 {
+        font-size: 1.2rem;
+
+    }
+
+    .aboutus {}
+
+    .text {
+
+
+        letter-spacing: 2px;
+        margin: 0 auto;
+    }
+
+    .text__p {
+        display: grid;
+        grid-template-rows: 1fr;
+        width: 100%;
+
+    }
+
+}
+
 .hero__section--main {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/main.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100%;
     opacity: 1;
 
 }
 
 .main__section {
 
-    padding: 20px;
+    padding: 10px;
 
 
 }
 
 .main__section--titulo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     padding-top: 60px;
     letter-spacing: 5px;
@@ -146,7 +198,7 @@ input {
 }
 
 .main__section--titulo1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     padding-top: 20px;
     letter-spacing: 5px;
@@ -156,10 +208,11 @@ input {
 
 .main__section--p {
     text-align: center;
-    margin-top: 3px;
+    margin-top: 1px;
     padding: 1px;
     color: map-get($colores, letras);
     font-weight: map-get($font-weights , bold);
+
 
 }
 
@@ -198,7 +251,8 @@ input {
 
 .text {
     color: map-get($colores, letras);
-    padding: 10px;
+    letter-spacing: 1.3px;
+    padding: 5px;
     width: 60%;
     margin: 0 auto;
     font-family: $tipografia;
@@ -213,4 +267,69 @@ input {
 
 .section__glamping {
     margin-top: 3px;
+}
+
+
+
+
+.glamping__svg--iconos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: map-get($colores, letras);
+}
+.glamping__svg--icono1{
+    margin-top: 1px;
+}
+
+.informacion {
+    padding-left: 3rem;
+    text-align: start;
+    display: inline-block;
+}
+
+.seccion__button {
+    display: flex;
+}
+
+.button {
+    background: none;
+    border-radius: 15px 15px 15px 15px;
+    font-family: $tipografia;
+    font-weight: map-get($font-weights , medio);
+    border-color: map-get($colores, formulario);
+    color: map-get($colores, formulario);
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    padding: 3px 25px 3px 25px;
+    margin-right: 2em;
+
+}
+
+.button__more {
+    background: none;
+    border-radius: 15px 15px 15px 15px;
+    font-family: $tipografia;
+    font-weight: map-get($font-weights , medio);
+    border-color: map-get($colores, letras);
+    color: map-get($colores, letras);
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    padding: 3px 25px 3px 25px;
+    margin-right: 2em;
+}
+
+.glamp__titulo {
+    font-size: 2rem;
+    color: map-get($colores , letras);
+    font-family: $tipografia;
+    font-weight: map-get($font-weights , bold);
+}
+
+.glamp__titulo--p {
+    color: map-get($colores , letras);
+    font-family: $tipografia;
+    font-weight: map-get($font-weights , regular);
 }
