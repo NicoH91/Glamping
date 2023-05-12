@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 $colores: (
     formulario: #F4AB3E,
     letras: #FFFFFF,
@@ -15,13 +16,14 @@ $colores: (
 $font-weights: (
 regular: 400,
 medio: 500,
-bold: 700,
+bol: 700,
 );
 
 $tipografia:  'Poppins', sans-serif;
 
 body{
     background-color: map-get($colores, body );
+    font-family: $tipografia;
 }
 
 .space{

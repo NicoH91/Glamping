@@ -6,6 +6,7 @@
 
 body {
   background-color: #3C4139;
+  font-family: "Poppins", sans-serif;
 }
 
 .space {
@@ -18,9 +19,14 @@ body {
 }
 
 .navbar__logo {
-  font-size: 24px;
-  font-weight: 700;
-  color: #FFFFFF;
+  padding: 0;
+  margin-top: 0;
+}
+
+.navbar__logo img {
+  width: 50%;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-item {
@@ -35,11 +41,11 @@ body {
 }
 
 .hero-section {
-  background-image: url(../img/home.jpg);
+  background-image: url(/img/home.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
-  opacity: 1;
+  width: 100%;
 }
 
 .search-form {
@@ -95,10 +101,14 @@ input {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    text-align: right;
+  }
   .nav-link {
     font-size: 1.2rem;
     color: #FFFFFF;
     font-weight: 700;
+    text-align: right;
   }
   .hero-section {
     height: 500px;
@@ -147,7 +157,7 @@ input {
   }
 }
 .hero__section--main {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/main.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/main.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -287,6 +297,63 @@ input {
   color: #FFFFFF;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+}
+
+.zona {
+  height: 100vh;
+}
+
+.guest {
+  background-image: url(/img/guestsaying.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.square {
+  background-color: rgba(20, 20, 21, 0.5);
+  transform: translate(0px, 400px);
+}
+
+.guest__seccion {
+  text-align: center;
+  height: auto;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+.guest__seccion--feed {
+  color: #FFFFFF;
+  letter-spacing: 1.3px;
+  padding: 6px;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 1.8em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.guest__seccion--p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.guest__titulo {
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.guest__titulo--nombre {
+  color: #F4AB3E;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.question {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

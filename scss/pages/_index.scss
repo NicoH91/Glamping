@@ -3,12 +3,18 @@
     margin-right: 20em;
 }
 
-
-
 .navbar__logo {
-    font-size: 24px;
-    font-weight: map-get($font-weights, bold);
-    color: map-get($colores, letras);
+    padding: 0;
+    margin-top: 0;
+
+
+}
+
+
+.navbar__logo img {
+    width: 50%;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-item {
@@ -19,7 +25,7 @@
 .nav-link {
     font-size: 1.2rem;
     color: map-get($colores , navbar);
-    font-weight: map-get($font-weights , bold);
+    font-weight: map-get($font-weights , bol);
 }
 
 
@@ -28,7 +34,7 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    opacity: 1;
+    width: 100%;
 }
 
 .search-form {
@@ -65,7 +71,7 @@ input {
     margin-right: 5px;
     font-family: $tipografia;
     color: map-get($colores, letras);
-    font-weight: map-get($font-weights, bold);
+    font-weight: map-get($font-weights, bol);
 }
 
 .search-form .search-btn {
@@ -86,12 +92,15 @@ input {
 
 @media (max-width: 768px) {
 
-
+    .navbar {
+        text-align: right;
+    }
 
     .nav-link {
         font-size: 1.2rem;
         color: map-get($colores , letras);
-        font-weight: map-get($font-weights , bold);
+        font-weight: map-get($font-weights , bol);
+        text-align: right;
     }
 
 
@@ -154,7 +163,7 @@ input {
 
     }
 
-    
+
 
     .text {
 
@@ -173,7 +182,9 @@ input {
 }
 
 .hero__section--main {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/main.jpg);
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/img/main.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -211,7 +222,7 @@ input {
     margin-top: 1px;
     padding: 1px;
     color: map-get($colores, letras);
-    font-weight: map-get($font-weights , bold);
+    font-weight: map-get($font-weights , bol);
 
 
 }
@@ -256,7 +267,7 @@ input {
     width: 60%;
     margin: 0 auto;
     font-family: $tipografia;
-    font-weight: map-get($font-weights, bold);
+    font-weight: map-get($font-weights, bol);
     font-size: 1rem;
 }
 
@@ -278,7 +289,8 @@ input {
     align-items: center;
     color: map-get($colores, letras);
 }
-.glamping__svg--icono1{
+
+.glamping__svg--icono1 {
     margin-top: 1px;
 }
 
@@ -325,11 +337,82 @@ input {
     font-size: 2rem;
     color: map-get($colores , letras);
     font-family: $tipografia;
-    font-weight: map-get($font-weights , bold);
+    font-weight: map-get($font-weights , bol);
 }
 
 .glamp__titulo--p {
     color: map-get($colores , letras);
     font-family: $tipografia;
     font-weight: map-get($font-weights , regular);
+}
+
+.zona {
+   
+    height: 100vh;
+   
+    
+}
+
+
+.guest {
+    background-image: url(/img/guestsaying.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    
+    
+
+
+
+}
+
+.square {
+    background-color: rgba(20, 20, 21, 0.500);
+    transform: translate(0px, 400px);
+}
+
+.guest__seccion {
+
+    text-align: center;
+
+    height: auto;
+    color: map-get($colores, letras);
+    padding: 10px;
+}
+
+.guest__seccion--feed {
+    color: map-get($colores, letras);
+    letter-spacing: 1.3px;
+    padding: 6px;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.8em;
+    font-family: $tipografia;
+    font-weight: map-get($font-weights, bol);
+    font-size: 1rem;
+
+}
+
+.guest__seccion--p {
+    font-family: $tipografia;
+    font-weight: map-get($font-weights, bol);
+}
+
+.guest__titulo {
+    color: map-get($colores, letras);
+    font-family: $tipografia ;
+    font-weight: map-get($font-weights, medio);
+}
+
+.guest__titulo--nombre {
+    color: map-get($colores, formulario);
+    font-family: $tipografia ;
+    font-weight: map-get($font-weights, medio);
+}
+
+// seccion de preguntas 
+
+.question{
+    text-align: center;
 }
