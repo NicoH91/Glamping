@@ -30,7 +30,7 @@
 
 
 .hero-section {
-    background-image: url(/img/home.jpg);
+    background-image: url(../../img/home.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -184,7 +184,7 @@ input {
 .hero__section--main {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(/img/main.jpg);
+            rgba(0, 0, 0, 0.5)), url(../../img/main.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -346,24 +346,23 @@ input {
     font-weight: map-get($font-weights , regular);
 }
 
+
+// seccion de GUEST ARE SAYING
+
 .zona {
 
     height: 100vh;
-
+background-image: url(../../img/guestsaying.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
 
 .guest {
-    background-image: url(/img/guestsaying.jpg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    
     height: 100%;
-
-
-
-
 
 }
 
@@ -410,7 +409,8 @@ input {
     font-family: $tipografia ;
     font-weight: map-get($font-weights, medio);
 }
-.question{
+
+.question {
     width: 100%;
 }
 
@@ -443,46 +443,134 @@ span {
 //Comienza el Footer 
 
 
-
-.footer{
+.footer {
     background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)), url(/img/footer.jpg);
-background-size: cover;
-background-position: center;
-height: 100vh;
-opacity: 1;
-display: flex;
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../../img/footer.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    opacity: 1;
+    display: flex;
 }
 
-.container{
+.container {
     margin-top: 4rem;
     padding-top: 4rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+
+
 }
-.footer__info{
+
+.footer__info {
     letter-spacing: 2px;
     display: flex;
     width: 30vw;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: map-get($colores , letras );
+    color: white;
     padding: 10px;
     font-size: 1.8rem;
     margin-left: 2rem;
+    font-family: $tipografia;
+    font-weight: map-get($font-weights , regular );
 }
 
 
-.footer__info--p2{
+
+.footer__info--p2 {
     font-size: 1.5rem;
-   margin-right: 10rem;
-    width: 55%;
+    margin-right: 10.4rem;
+    width: 60%;
+    font-family: $tipografia;
+    font-weight: map-get($font-weights , regular );
 }
 
-.footer__info--p3{
+.footer__info--p3 {
     font-size: 1rem;
-    margin-right: 8.2rem;
-     width: 60%;
+    margin-right: 10rem;
+    width: 60%;
+    font-family: $tipografia;
+    font-weight: map-get($font-weights , regular );
+}
+
+.footer__info--p4 {
+    font-size: 1.5rem;
+    margin-right: 10rem;
+    width: 60%;
+    font-family: $tipografia;
+    font-weight: map-get($font-weights , medio );
+}
+
+
+
+.form__formulario {
+    text-align: center;
+    display: flex;
+
+
+    width: max-content;
+    height: 55VH;
+
+    padding: 50px 30px 80px 30px;
+    border-radius: 80px;
+    color: map-get($colores , letras );
+    background-color:map-get($colores , formulario );
+    transform: translate(5%, 30%);
+    font-family: $tipografia;
+    font-weight: map-get($font-weights , medio );
+}
+
+.form__formulario input {
+    display: flex;
+    margin-bottom: 10px;
+    width: 30vw;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: $tipografia;
+}
+
+.formulario input{
+    background-color: map-get($colores , letras );
+    border-style: none;
+    border-radius: 30px;
+    font-family: $tipografia;
+    font-weight: map-get($font-weights , medio );
+    
+
+}
+
+
+.pregunta {
+    display: flex;
+    width: 30vw;
+    height: 12rem;
+    flex-direction: column;
+    font-family: $tipografia;
+}
+
+.btn__formulario {
+    margin-top: 1rem;
+    padding: 0.5em;
+    border: solid map-get($colores, letras );
+    background-color: map-get($colores , formulario );
+    color: white;
+    border-radius: 80px;
+    padding: 5px 40px 5px 40px;
+    font-family: $tipografia;
+}
+
+.space2 {
+    padding: 4px;
+}
+
+
+
+.copyright {
+    background-color: black;
+    text-align: center;
+    color: white;
 }

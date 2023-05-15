@@ -41,7 +41,7 @@ body {
 }
 
 .hero-section {
-  background-image: url(/img/home.jpg);
+  background-image: url(../../img/home.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -157,7 +157,7 @@ input {
   }
 }
 .hero__section--main {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/main.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/main.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -301,13 +301,13 @@ input {
 
 .zona {
   height: 100vh;
+  background-image: url(../../img/guestsaying.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .guest {
-  background-image: url(/img/guestsaying.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 100%;
 }
 
@@ -379,7 +379,7 @@ span {
 }
 
 .footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/footer.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/footer.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -391,7 +391,7 @@ span {
   margin-top: 4rem;
   padding-top: 4rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .footer__info {
@@ -401,22 +401,97 @@ span {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #FFFFFF;
+  color: white;
   padding: 10px;
   font-size: 1.8rem;
   margin-left: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 .footer__info--p2 {
   font-size: 1.5rem;
-  margin-right: 10rem;
-  width: 55%;
+  margin-right: 10.4rem;
+  width: 60%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 .footer__info--p3 {
   font-size: 1rem;
-  margin-right: 8.2rem;
+  margin-right: 10rem;
   width: 60%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.footer__info--p4 {
+  font-size: 1.5rem;
+  margin-right: 10rem;
+  width: 60%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.form__formulario {
+  text-align: center;
+  display: flex;
+  width: max-content;
+  height: 55VH;
+  padding: 50px 30px 80px 30px;
+  border-radius: 80px;
+  color: #FFFFFF;
+  background-color: #F4AB3E;
+  transform: translate(5%, 30%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.form__formulario input {
+  display: flex;
+  margin-bottom: 10px;
+  width: 30vw;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.formulario input {
+  background-color: #FFFFFF;
+  border-style: none;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.pregunta {
+  display: flex;
+  width: 30vw;
+  height: 12rem;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn__formulario {
+  margin-top: 1rem;
+  padding: 0.5em;
+  border: solid #FFFFFF;
+  background-color: #F4AB3E;
+  color: white;
+  border-radius: 80px;
+  padding: 5px 40px 5px 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.space2 {
+  padding: 4px;
+}
+
+.copyright {
+  background-color: black;
+  text-align: center;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
