@@ -41,7 +41,7 @@ body {
 }
 
 .hero-section {
-  background-image: url(../../img/home.jpg);
+  background-image: url(/img/home.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -157,7 +157,7 @@ input {
   }
 }
 .hero__section--main {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/main.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/main.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -233,25 +233,86 @@ input {
   font-size: 1rem;
 }
 
+@media (min-width: 320px) and (max-width: 720px) {
+  .section__glamping {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+  }
+  .glamping__svg--iconos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .section__glamping2 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+    width: 100%;
+  }
+  .glamp__titulo--p2 {
+    width: 60%;
+  }
+}
+.glamping__total {
+  width: 80vw;
+  margin: 0% 15% 0% 12%;
+}
+
 .section__glamping {
-  margin-top: 3px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 70vw;
+  margin: 0 4%;
+}
+
+.main__section--titulo1 {
+  text-align: center;
+  color: white;
+  padding-bottom: 6rem;
+}
+
+.glamp1 {
+  padding-top: 1.5rem;
+  margin-left: 2rem;
 }
 
 .glamping__svg--iconos {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
   align-items: center;
+  text-align: center;
   color: #FFFFFF;
 }
 
 .glamping__svg--icono1 {
   margin-top: 1px;
+  font-size: 0.9rem;
 }
 
-.informacion {
-  padding-left: 3rem;
+.informacion__glamp1 {
+  width: 80%;
+}
+
+.divfoto {
+  width: 80%;
+}
+
+.section__glamping2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 70vw;
+  margin: 0 4%;
+}
+
+.informacion__glamp2 {
+  width: 40vh;
   text-align: start;
-  display: inline-block;
 }
 
 .seccion__button {
@@ -301,7 +362,7 @@ input {
 
 .zona {
   height: 100vh;
-  background-image: url(../../img/guestsaying.jpg);
+  background-image: url(/img/guestsaying.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

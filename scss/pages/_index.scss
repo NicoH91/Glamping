@@ -275,30 +275,111 @@ input {
 // // Main section  FINALIZO
 
 //Comienza la section OUR GLAMPING
+@media (min-width:320px) and (max-width: 720px) {
 
+    .section__glamping {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+    .glamping__svg--iconos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .section__glamping2 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        width: 100%;
+    }
+
+    .glamp__titulo--p2 {
+        width: 60%;
+
+    }
+}
+.glamping__total{
+    width: 80vw;
+    margin: 0% 15% 0% 12%;
+}
 .section__glamping {
-    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 70vw;
+    margin: 0 4%;
 }
 
+.main__section--titulo1 {
+    text-align: center;
+    color: white;
+    padding-bottom: 6rem;
+}
 
+// .img{
+//     width: 100%;
+//     height: 100%;
+//     overflow-x: hidden;
+// }
 
+.glamp1 {
+    padding-top: 1.5rem;
+    margin-left: 2rem;
+}
 
 .glamping__svg--iconos {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
     align-items: center;
+    text-align: center;
     color: map-get($colores, letras);
 }
 
 .glamping__svg--icono1 {
     margin-top: 1px;
+    font-size: 0.9rem;
 }
 
-.informacion {
-    padding-left: 3rem;
-    text-align: start;
-    display: inline-block;
+.informacion__glamp1 {
+
+    width: 80%;
+
 }
+
+//seccion glamping 2 
+.divfoto{
+    width: 80%;
+}
+.section__glamping2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 70vw;
+    margin: 0 4%;
+    // display: flex;
+    // justify-content: center;
+    // align-content: center;
+    // width: 70vw;
+
+    // margin-left: 15%;
+    // gap: 60px;
+    // overflow-x: hidden;
+}
+
+.informacion__glamp2 {
+    width: 40vh;
+    text-align: start;
+}
+
+//fin seccion dos repite la seccion 1.
+
 
 .seccion__button {
     display: flex;
@@ -352,7 +433,8 @@ input {
 .zona {
 
     height: 100vh;
-background-image: url(../../img/guestsaying.jpg);
+
+    background-image: url(../../img/guestsaying.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -361,7 +443,7 @@ background-image: url(../../img/guestsaying.jpg);
 
 
 .guest {
-    
+
     height: 100%;
 
 }
@@ -475,7 +557,7 @@ span {
     font-size: 1.8rem;
     margin-left: 2rem;
     font-family: $tipografia;
-    font-weight: map-get($font-weights , regular );
+    font-weight: map-get($font-weights , regular);
 }
 
 
@@ -485,7 +567,7 @@ span {
     margin-right: 10.4rem;
     width: 60%;
     font-family: $tipografia;
-    font-weight: map-get($font-weights , regular );
+    font-weight: map-get($font-weights , regular);
 }
 
 .footer__info--p3 {
@@ -493,7 +575,7 @@ span {
     margin-right: 10rem;
     width: 60%;
     font-family: $tipografia;
-    font-weight: map-get($font-weights , regular );
+    font-weight: map-get($font-weights , regular);
 }
 
 .footer__info--p4 {
@@ -501,7 +583,7 @@ span {
     margin-right: 10rem;
     width: 60%;
     font-family: $tipografia;
-    font-weight: map-get($font-weights , medio );
+    font-weight: map-get($font-weights , medio);
 }
 
 
@@ -516,11 +598,11 @@ span {
 
     padding: 50px 30px 80px 30px;
     border-radius: 80px;
-    color: map-get($colores , letras );
-    background-color:map-get($colores , formulario );
+    color: map-get($colores , letras);
+    background-color: map-get($colores , formulario);
     transform: translate(5%, 30%);
     font-family: $tipografia;
-    font-weight: map-get($font-weights , medio );
+    font-weight: map-get($font-weights , medio);
 }
 
 .form__formulario input {
@@ -533,13 +615,13 @@ span {
     font-family: $tipografia;
 }
 
-.formulario input{
-    background-color: map-get($colores , letras );
+.formulario input {
+    background-color: map-get($colores , letras);
     border-style: none;
     border-radius: 30px;
     font-family: $tipografia;
-    font-weight: map-get($font-weights , medio );
-    
+    font-weight: map-get($font-weights , medio);
+
 
 }
 
@@ -555,8 +637,8 @@ span {
 .btn__formulario {
     margin-top: 1rem;
     padding: 0.5em;
-    border: solid map-get($colores, letras );
-    background-color: map-get($colores , formulario );
+    border: solid map-get($colores, letras);
+    background-color: map-get($colores , formulario);
     color: white;
     border-radius: 80px;
     padding: 5px 40px 5px 40px;
