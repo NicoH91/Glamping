@@ -37,58 +37,11 @@
     width: 100%;
 }
 
-.search-form {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -20px;
-    justify-content: flex-end;
-    align-items: center;
-    position: absolute;
-    bottom: 5px;
-    right: 20px;
-    font-weight: map-get($font-weights, medio);
-    background-color: map-get($colores, formulario);
-    border-top-left-radius: 20px;
-    padding: 50px;
-    z-index: 999;
-}
-
-.search-form .form-group {
-    font-family: $tipografia;
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}
 
 
-input {
-    background-color: map-get($colores, formulario);
-    padding: 10px;
-    border-radius: 10px;
-}
 
-.search-form .form-group label {
-    margin-right: 5px;
-    font-family: $tipografia;
-    color: map-get($colores, letras);
-    font-weight: map-get($font-weights, bol);
-}
 
-.search-form .search-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: map-get($colores, formulario);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-}
 
-.search-form .search-btn i {
-    margin-right: 5px;
-}
 
 @media (max-width: 768px) {
 
@@ -383,38 +336,7 @@ input {
 //fin seccion dos repite la seccion 1.
 
 
-.seccion__button {
-    display: flex;
-}
 
-.button {
-    background: none;
-    border-radius: 15px 15px 15px 15px;
-    font-family: $tipografia;
-    font-weight: map-get($font-weights , medio);
-    border-color: map-get($colores, formulario);
-    color: map-get($colores, formulario);
-    font: inherit;
-    cursor: pointer;
-    outline: none;
-    padding: 3px 25px 3px 25px;
-    margin-right: 2em;
-
-}
-
-.button__more {
-    background: none;
-    border-radius: 15px 15px 15px 15px;
-    font-family: $tipografia;
-    font-weight: map-get($font-weights , medio);
-    border-color: map-get($colores, letras);
-    color: map-get($colores, letras);
-    font: inherit;
-    cursor: pointer;
-    outline: none;
-    padding: 3px 25px 3px 25px;
-    margin-right: 2em;
-}
 
 .glamp__titulo {
     font-size: 2rem;
