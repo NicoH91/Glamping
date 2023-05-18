@@ -523,27 +523,24 @@ span {
     font-weight: map-get($font-weights, medio);
 }
 
+//Comienza el Footer
 
-//Comienza el Footer 
-// @media only screen and (max-width: 576px) {
-//   .footer__div{
-//    display: grid;
-   
-//   }
+@media only screen and (max-width: 576px) {
+    
 
-//   .footer__info{
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap-reverse;
-//   }
+.footer__div{
+ display: flex;
+}
+.form__formulario{
+    display: flex;
+   flex-direction: column;
+}
 
-
-
-// }
+}
 
 // /* Medium devices (tablets) */
 // @media only screen and (min-width: 577px) and (max-width: 992px) {
-   
+
 
 //     .footer {
 //         /* Styles for medium devices */
@@ -551,7 +548,7 @@ span {
 //         align-items: flex-start;
 //     }
 
- 
+
 
 //     .form__formulario {
 //         /* Styles for medium devices */
@@ -563,19 +560,19 @@ span {
 //     }
 // }
 
-.footer__div{
-     display: flex;
-     align-content: space-around;
-     justify-content: space-evenly;
+.footer__div {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-evenly;
     background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)), url(/img/footer.jpg);
-background-size: cover;
-background-position: center;
-height: 100%;
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/img/footer.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
 
-opacity: 1;
-    
+    opacity: 1;
+
 }
 
 
@@ -585,7 +582,7 @@ opacity: 1;
 .footer__info {
     letter-spacing: 2px;
     display: flex;
-justify-content: space-between;
+    justify-content: space-between;
     width: 40vw;
     align-items: center;
     flex-direction: column;
@@ -631,10 +628,10 @@ justify-content: space-between;
     display: flex;
 
 
-    // width: max-content;
+    width: fit-content;
     // height: 55VH;
 
-    padding: 40px 30px 60px 30px;
+    padding: 2rem 3rem;
     border-radius: 80px;
     color: map-get($colores , letras);
     background-color: map-get($colores , formulario);

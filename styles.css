@@ -104,15 +104,18 @@ input {
   .navbar {
     text-align: right;
   }
+
   .nav-link {
     font-size: 1.2rem;
     color: #FFFFFF;
     font-weight: 800;
     text-align: right;
   }
+
   .hero-section {
     height: 500px;
   }
+
   .search-form {
     display: none;
     width: 100%;
@@ -122,40 +125,49 @@ input {
     padding: 5px;
     border-radius: 5%;
   }
+
   .navbar__links li a {
     color: white;
   }
 }
+
 @media (min-width: 320px) and (max-width: 768px) {
   .hero__section--main {
     height: 100%;
   }
+
   .main__section {
     display: grid;
     text-align: center;
     grid-template-columns: 1fr;
   }
+
   .iconos {
     display: grid;
     grid-row-end: auto;
     grid-template-rows: 1fr;
   }
+
   .svg__p {
     display: none;
   }
+
   .main__section--titulo2 {
     font-size: 1.2rem;
   }
+
   .text {
     letter-spacing: 2px;
     margin: 0 auto;
   }
+
   .text__p {
     display: grid;
     grid-template-rows: 1fr;
     width: 100%;
   }
 }
+
 .hero__section--main {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/main.jpg);
   background-size: cover;
@@ -240,6 +252,7 @@ input {
     margin: auto;
     width: 100%;
   }
+
   .glamping__svg--iconos {
     display: flex;
     flex-direction: row;
@@ -247,16 +260,19 @@ input {
     margin: 0 auto;
     text-align: center;
   }
+
   .section__glamping2 {
     display: flex;
     flex-direction: column-reverse;
     margin: 0;
     width: 100%;
   }
+
   .glamp__titulo--p2 {
     width: 60%;
   }
 }
+
 .glamping__total {
   width: 80vw;
   margin: 0% 15% 0% 12%;
@@ -444,11 +460,23 @@ span {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 576px) {
+  .footer__div {
+    display: flex;
+  }
+
+  .form__formulario {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .footer__div {
   display: flex;
   align-content: space-around;
   justify-content: space-evenly;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/footer.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)), url(/img/footer.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -492,7 +520,8 @@ span {
 .form__formulario {
   text-align: center;
   display: flex;
-  padding: 40px 30px 60px 30px;
+  width: fit-content;
+  padding: 2rem 3rem;
   border-radius: 80px;
   color: #FFFFFF;
   background-color: #F4AB3E;
