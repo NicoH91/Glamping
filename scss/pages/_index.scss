@@ -305,10 +305,12 @@ input {
 
     }
 }
-.glamping__total{
+
+.glamping__total {
     width: 80vw;
     margin: 0% 15% 0% 12%;
 }
+
 .section__glamping {
     display: flex;
     justify-content: center;
@@ -323,6 +325,11 @@ input {
     padding-bottom: 6rem;
 }
 
+.imgglamp {
+    width: 69vw;
+    height: 40vh;
+}
+
 // .img{
 //     width: 100%;
 //     height: 100%;
@@ -330,7 +337,7 @@ input {
 // }
 
 .glamp1 {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     margin-left: 2rem;
 }
 
@@ -353,24 +360,19 @@ input {
 
 }
 
-//seccion glamping 2 
-.divfoto{
-    width: 80%;
+.informacion__glamp3 {
+    width: 100%;
+
 }
+
+
 .section__glamping2 {
     display: flex;
     justify-content: center;
     align-content: center;
     width: 70vw;
     margin: 0 4%;
-    // display: flex;
-    // justify-content: center;
-    // align-content: center;
-    // width: 70vw;
 
-    // margin-left: 15%;
-    // gap: 60px;
-    // overflow-x: hidden;
 }
 
 .informacion__glamp2 {
@@ -433,7 +435,7 @@ input {
 .zona {
 
     height: 100vh;
-    
+
     background-image: url(/img/guestsaying.jpg);
     background-size: cover;
     background-position: center;
@@ -523,65 +525,101 @@ span {
 
 
 //Comienza el Footer 
+// @media only screen and (max-width: 576px) {
+//   .footer__div{
+//    display: grid;
+   
+//   }
+
+//   .footer__info{
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap-reverse;
+//   }
 
 
-.footer {
+
+// }
+
+// /* Medium devices (tablets) */
+// @media only screen and (min-width: 577px) and (max-width: 992px) {
+   
+
+//     .footer {
+//         /* Styles for medium devices */
+//         justify-content: flex-start;
+//         align-items: flex-start;
+//     }
+
+ 
+
+//     .form__formulario {
+//         /* Styles for medium devices */
+//         margin-top: 20px;
+//     }
+
+//     .formulario {
+//         /* Styles for medium devices */
+//     }
+// }
+
+.footer__div{
+     display: flex;
+     align-content: space-around;
+     justify-content: space-evenly;
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(../../img/footer.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    opacity: 1;
-    display: flex;
+    linear-gradient(rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)), url(/img/footer.jpg);
+background-size: cover;
+background-position: center;
+height: 100%;
+
+opacity: 1;
+    
 }
 
-.container {
-    margin-top: 4rem;
-    padding-top: 4rem;
-    display: flex;
-    justify-content: space-around;
 
 
-}
+
 
 .footer__info {
     letter-spacing: 2px;
     display: flex;
-    width: 30vw;
-    justify-content: center;
+justify-content: space-between;
+    width: 40vw;
     align-items: center;
     flex-direction: column;
-    color: white;
+    color: map-get($colores , letras);
     padding: 10px;
     font-size: 1.8rem;
     margin-left: 2rem;
     font-family: $tipografia;
     font-weight: map-get($font-weights , regular);
+    text-align: start;
 }
 
 
 
 .footer__info--p2 {
     font-size: 1.5rem;
-    margin-right: 10.4rem;
-    width: 60%;
+    // margin-right: 10.4rem;
+
     font-family: $tipografia;
     font-weight: map-get($font-weights , regular);
 }
 
 .footer__info--p3 {
     font-size: 1rem;
-    margin-right: 10rem;
-    width: 60%;
+    // margin-right: 10rem;
+
     font-family: $tipografia;
     font-weight: map-get($font-weights , regular);
 }
 
 .footer__info--p4 {
     font-size: 1.5rem;
-    margin-right: 10rem;
-    width: 60%;
+    // margin-right: 10rem;
+
     font-family: $tipografia;
     font-weight: map-get($font-weights , medio);
 }
@@ -593,14 +631,14 @@ span {
     display: flex;
 
 
-    width: max-content;
-    height: 55VH;
+    // width: max-content;
+    // height: 55VH;
 
-    padding: 50px 30px 80px 30px;
+    padding: 40px 30px 60px 30px;
     border-radius: 80px;
     color: map-get($colores , letras);
     background-color: map-get($colores , formulario);
-    transform: translate(5%, 30%);
+    // transform: translate(5%, 30%);
     font-family: $tipografia;
     font-weight: map-get($font-weights , medio);
 }

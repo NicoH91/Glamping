@@ -276,8 +276,13 @@ input {
   padding-bottom: 6rem;
 }
 
+.imgglamp {
+  width: 69vw;
+  height: 40vh;
+}
+
 .glamp1 {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   margin-left: 2rem;
 }
 
@@ -298,8 +303,8 @@ input {
   width: 80%;
 }
 
-.divfoto {
-  width: 80%;
+.informacion__glamp3 {
+  width: 100%;
 }
 
 .section__glamping2 {
@@ -439,57 +444,47 @@ span {
   font-weight: 600;
 }
 
-.footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/footer.jpg);
+.footer__div {
+  display: flex;
+  align-content: space-around;
+  justify-content: space-evenly;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/footer.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 100%;
   opacity: 1;
-  display: flex;
-}
-
-.container {
-  margin-top: 4rem;
-  padding-top: 4rem;
-  display: flex;
-  justify-content: space-around;
 }
 
 .footer__info {
   letter-spacing: 2px;
   display: flex;
-  width: 30vw;
-  justify-content: center;
+  justify-content: space-between;
+  width: 40vw;
   align-items: center;
   flex-direction: column;
-  color: white;
+  color: #FFFFFF;
   padding: 10px;
   font-size: 1.8rem;
   margin-left: 2rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  text-align: start;
 }
 
 .footer__info--p2 {
   font-size: 1.5rem;
-  margin-right: 10.4rem;
-  width: 60%;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 
 .footer__info--p3 {
   font-size: 1rem;
-  margin-right: 10rem;
-  width: 60%;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 
 .footer__info--p4 {
   font-size: 1.5rem;
-  margin-right: 10rem;
-  width: 60%;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
@@ -497,13 +492,10 @@ span {
 .form__formulario {
   text-align: center;
   display: flex;
-  width: max-content;
-  height: 55VH;
-  padding: 50px 30px 80px 30px;
+  padding: 40px 30px 60px 30px;
   border-radius: 80px;
   color: #FFFFFF;
   background-color: #F4AB3E;
-  transform: translate(5%, 30%);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
